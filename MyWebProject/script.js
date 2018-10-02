@@ -1,18 +1,18 @@
 /**
- * ExtendTree
+ * Akhil Gupta
  *
  * NOTICE OF LICENSE
  *
  * This source file is subject to the Open Software License (OSL)
  * This is available through the world-wide-web at this URL:
- * http://opensource.org/licenses/OSL-3.0
+ * http://opensource.org/licenses/OSL-3.0  Open Software License (OSL)
  *
  * DISCLAIMER**
  *
- * @category   PHP basic Fronend Web project 
- * @package    ExtendTree-Simple PHP Web project
- * @license    http://opensource.org/licenses/OSL-3.0  Open Software License (OSL)
- * @Website    http://www.extendtree.com/
+ * @category   Simple PHP Web Project
+ * @package    Simple PHP Web project
+ * @url       https://www.youtube.com/user/thisisakhilgupta/
+ * @author    Akhil Gupta
  */
 
 var xmlhttp;
@@ -56,11 +56,11 @@ function checkRegistration(frm)
     var terms=frm.terms;
 
     var filtername=/^[a-zA-Z]*$/;
-	
+
     if(name.length<1)
     {
         document.getElementById('name').innerHTML='<blink><font color="yellow"/>Name is Required..!!</blink>';
-		
+
         return false;
     }else if((!filtername.test(name))) {
         alert('Name must contains alphabets only !!');
@@ -68,9 +68,9 @@ function checkRegistration(frm)
     }
     else{
         document.getElementById('name').innerHTML='';
-		
+
     }
-		
+
     if(username.length<1)
     {
         document.getElementById('username').innerHTML='<blink><font color="yellow"/>Username Rquired..!!</blink>';
@@ -91,7 +91,7 @@ function checkRegistration(frm)
         return false;
     }else{
         document.getElementById('dob').innerHTML='';
-		
+
     }
 
     if(gender[0].checked==false && gender[1].checked==false && gender[2].checked==false)
@@ -100,7 +100,7 @@ function checkRegistration(frm)
         return false;
     }else{
         document.getElementById('gender').innerHTML='';
-		
+
     }
 
     if( password.length<1)
@@ -114,7 +114,7 @@ function checkRegistration(frm)
     }
     else{
         document.getElementById('password').innerHTML='';
-		
+
     }
 
     if(cpassword.length<1)
@@ -127,13 +127,13 @@ function checkRegistration(frm)
         return false;
     }else{
         document.getElementById('cpassword').innerHTML='';
-		
+
     }
 
     if(terms.checked==false)
     {
         alert("You must agree terms & Conditions..!!")
-        return false;	
+        return false;
     }
 }
 function checkUsername()
@@ -145,7 +145,7 @@ function checkUsername()
         xmlhttp.open("POST","checkusername.php?username="+username,true);
         document.getElementById("username").innerHTML = '<img src="download.gif" border="0" alt="Loading, please wait..." />';
         xmlhttp.onreadystatechange=function()
-        {   
+        {
             if(xmlhttp.readyState==4 && xmlhttp.status==200)
             {
                 document.getElementById("username").innerHTML = xmlhttp.responseText;
@@ -157,7 +157,6 @@ function checkUsername()
     else
     {
         document.getElementById('username').innerHTML='<blink><font color="yellow"/>Username must have atleast 4 characters..</blink>';
-	  
-    }
-} 
 
+    }
+}

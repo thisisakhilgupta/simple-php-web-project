@@ -1,19 +1,19 @@
 <!--
 /**
- * ExtendTree
+ * Akhil Gupta
  *
  * NOTICE OF LICENSE
  *
  * This source file is subject to the Open Software License (OSL)
  * This is available through the world-wide-web at this URL:
- * http://opensource.org/licenses/OSL-3.0
+ * http://opensource.org/licenses/OSL-3.0  Open Software License (OSL)
  *
  * DISCLAIMER**
  *
- * @category   PHP basic Fronend Web project 
- * @package    ExtendTree-Simple PHP Web project
- * @license    http://opensource.org/licenses/OSL-3.0  Open Software License (OSL)
- * @Website    http://www.extendtree.com/
+ * @category   Simple PHP Web Project
+ * @package    Simple PHP Web project
+ * @url       https://www.youtube.com/user/thisisakhilgupta/
+ * @author    Akhil Gupta
  */
 -->
 
@@ -54,7 +54,7 @@ if (isset($_SESSION['Logged_in']))
 
     <?php
     if (!empty($_GET["result"])) {
-        echo "<center><div style='height: 25px;width: 280px; background-color:red'> 
+        echo "<center><div style='height: 25px;width: 280px; background-color:red'>
 <b>Wrong username or password</b></div></center>";
     }
     ?>

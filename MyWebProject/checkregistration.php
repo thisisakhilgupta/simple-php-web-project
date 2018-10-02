@@ -1,19 +1,19 @@
 <!--
 /**
- * ExtendTree
+ * Akhil Gupta
  *
  * NOTICE OF LICENSE
  *
  * This source file is subject to the Open Software License (OSL)
  * This is available through the world-wide-web at this URL:
- * http://opensource.org/licenses/OSL-3.0
+ * http://opensource.org/licenses/OSL-3.0  Open Software License (OSL)
  *
  * DISCLAIMER**
  *
- * @category   PHP basic Fronend Web project 
- * @package    ExtendTree-Simple PHP Web project
- * @license    http://opensource.org/licenses/OSL-3.0  Open Software License (OSL)
- * @Website    http://www.extendtree.com/
+ * @category   Simple PHP Web Project
+ * @package    Simple PHP Web project
+ * @url       https://www.youtube.com/user/thisisakhilgupta/
+ * @author    Akhil Gupta
  */
 -->
 
@@ -49,4 +49,3 @@ mysqli_close($connect);
         <a href='login.php'>Login</a> To Continue..
         <h1></center>
             </html>
-
